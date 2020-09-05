@@ -1,3 +1,5 @@
 README.txt
 
-Need to fill this is.
+Controls:
+
+Pause: Press key "P"
