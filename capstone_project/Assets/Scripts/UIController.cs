@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
 
-    public string mainMenuScene;
+    public string MainMenu;
     public GameObject pauseMenu;
     public bool isPaused;
 
@@ -22,11 +22,12 @@ public class UIController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P)) {
             if (isPaused) {
                 ResumeGame();
-
+                Cursor.lockState = CursorLockMode.Locked;
             } else {
                 isPaused = true;
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0f;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
@@ -40,10 +41,14 @@ public class UIController : MonoBehaviour
     public void Restart() {
         SceneManager.LoadScene("Level1");
         UnityEngine.Debug.Log("Restarted the scene.");
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 
     public void ReturnToMain() {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(mainMenuScene);
+        Debug.Log("Main menu loading..");
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+
     }
 }

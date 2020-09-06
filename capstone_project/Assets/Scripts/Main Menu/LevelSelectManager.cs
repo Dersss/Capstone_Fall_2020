@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelSelectManager : MonoBehaviour
 {
@@ -28,16 +29,15 @@ public class LevelSelectManager : MonoBehaviour
             Start();
         }
 
-        //import list of levels, probably from XML or something
-        //for now, sample data
+        int sceneCount = SceneManager.sceneCountInBuildSettings;
         int count;
-        for (count = 0; count < 4; count++)
+        for (count = 0; count < sceneCount - 1; count++)
         {
             levelButtons.Add(Instantiate(LevelButtonPrefab, listContentObject.transform));
             levelButtons[count].transform.localPosition = new Vector3(buttonWidth/2, -buttonHeight/2 + (count*-buttonHeight), 0);
-            levelButtons[count].GetComponentInChildren<UnityEngine.UI.Text>().text = "Level " + count;
+            levelButtons[count].GetComponentInChildren<UnityEngine.UI.Text>().text = "Level " + (count+1);
             //levelButtons[count].GetComponentInChildren<UnityEngine.UI.Image>().sprite = 
-            //set button event to right scene
+            levelButtons[count].GetComponent<LevelSelectButton>().SceneBuildIndex = count + 1;
         }
 
         if(count*buttonHeight > minimumContentHeight)
