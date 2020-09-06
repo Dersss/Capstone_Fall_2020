@@ -57,13 +57,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Main Menu\LevelSelectManager.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />
+     <Compile Include="Assets\Scripts\ScreenshotController.cs" />
+     <Compile Include="Assets\Scripts\Main Menu\LevelSelectButton.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Main Menu\MainMenuStateManager.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CubeMovementController.cs" />
-     <Compile Include="Assets\Scripts\ScreenshotController.cs" />
-     <Compile Include="Assets\Scripts\Main Menu\LevelSelectButton.cs" />
      <None Include="Assets\README.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
