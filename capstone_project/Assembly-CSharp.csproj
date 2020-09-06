@@ -65,6 +65,8 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CubeMovementController.cs" />
      <None Include="Assets\README.txt" />
+     <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
+     <None Include="Assets\Hovl Studio\Procedural fire\Demo scene\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
