@@ -72,31 +72,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12336}
+      Script: {instanceID: 11912}
     - Class: 114
-      Script: {instanceID: 12522}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 12722}
     - Class: 114
-      Script: {instanceID: 13670}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13682}
     - Class: 114
-      Script: {instanceID: 13964}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 14882}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 14976}
+      Script: {instanceID: 14986}
     - Class: 114
-      Script: {instanceID: 15638}
+      Script: {instanceID: 15648}
     - Class: 114
-      Script: {instanceID: 15680}
+      Script: {instanceID: 15690}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -144,47 +144,55 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12260}
+      Script: {instanceID: 11912}
     - Class: 114
-      Script: {instanceID: 12272}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12336}
+      Script: {instanceID: 12286}
     - Class: 114
-      Script: {instanceID: 12942}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 12954}
     - Class: 114
-      Script: {instanceID: 13516}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13626}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13964}
+      Script: {instanceID: 13638}
     - Class: 114
-      Script: {instanceID: 14290}
+      Script: {instanceID: 14300}
     - Class: 114
-      Script: {instanceID: 14976}
+      Script: {instanceID: 14986}
     - Class: 114
-      Script: {instanceID: 15680}
+      Script: {instanceID: 15690}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 136
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -199,6 +207,18 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: f087c23fbfa15475a0d110af46fb0496
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: a1f19ad47d3094e235f21b74dfc423a8
@@ -307,12 +327,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: GroupWeightManipulator
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: fd8b23ad3c9e81bc85b197495bc510ac
@@ -727,12 +741,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: f087c23fbfa15475a0d110af46fb0496
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
