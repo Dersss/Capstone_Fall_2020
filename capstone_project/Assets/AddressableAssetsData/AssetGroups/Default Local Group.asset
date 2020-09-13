@@ -16,7 +16,13 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b54910aaa13b82d45a2be3c090e613af
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 23ee7f6864c52b243bfb4f2da09bc287
+    m_Address: Assets/Zombie/Animations/Z_Idle.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 604ed239534df8e4f896d10e965e619d, type: 2}
   m_SchemaSet:
