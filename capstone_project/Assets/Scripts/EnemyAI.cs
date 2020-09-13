@@ -8,12 +8,13 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animation>();
+        //anim = GetComponent<Animation>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //anim.Play();
+        //transform.position = Vector3.forward;
     }
 }
