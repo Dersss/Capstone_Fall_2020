@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
   m_DefaultGroup: b54910aaa13b82d45a2be3c090e613af
+  m_CachedHash:
+    m_u32_0: 0
+    m_u32_1: 0
+    m_u32_2: 0
+    m_u32_3: 0
+  m_IsTemporary: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -73,6 +79,7 @@ MonoBehaviour:
   m_CertificateHandlerType:
     m_AssemblyName: 
     m_ClassName: 
+    <ValueChanged>k__BackingField: 0
   m_ActivePlayerDataBuilderIndex: 3
   m_DataBuilders:
   - {fileID: 11400000, guid: fb21a071aea6b3843a7a36f24e72d04f, type: 2}
@@ -85,3 +92,4 @@ MonoBehaviour:
     m_Settings: {fileID: 11400000}
     m_NextInstanceId: 0
     m_RegisteredServiceTypeRefs: []
+  m_DefaultGroupTemplateName: Packed Assets
