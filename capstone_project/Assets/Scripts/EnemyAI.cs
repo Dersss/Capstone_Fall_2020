@@ -6,13 +6,12 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public Animator animator;
-    public Animation anim;
-    public ArrayList an;
+    
     // Start is called before the first frame update
     void Start()
     {
         animator = this.GetComponent<Animator>();
-        anim = this.GetComponent<Animation>();
+        
     }
 
     // Update is called once per frame
@@ -20,7 +19,16 @@ public class EnemyAI : MonoBehaviour
     {
 
         
-       //animator.GetCurrentAnimatorClipInfo(0);
+     
         
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            //fall back animation and despawn
+
+            
+        }
     }
 }
