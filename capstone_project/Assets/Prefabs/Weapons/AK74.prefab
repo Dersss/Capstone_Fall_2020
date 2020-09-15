@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 595164965189059824}
   - component: {fileID: 111238396367586392}
   - component: {fileID: 5486875417918141925}
+  - component: {fileID: -5005431311283298193}
   m_Layer: 0
   m_Name: AK74
   m_TagString: Untagged
@@ -219,6 +220,19 @@ MonoBehaviour:
   totalAmmo: 900
   customCrossHair: {fileID: 0}
   cam: {fileID: 0}
+--- !u!114 &-5005431311283298193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952584141624956288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da69d4a41375faa48a410ac9bffbf75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemID: 2
 --- !u!1 &2952584141624956290
 GameObject:
   m_ObjectHideFlags: 0

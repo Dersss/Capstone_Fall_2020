@@ -16,11 +16,9 @@ public class PlayerInventory : MonoBehaviour
 
         weaponSlot[0] = GameObject.FindWithTag("GunSlot1");
         weaponSlot[1] = GameObject.FindWithTag("GunSlot2");
-        if (weaponSlot[0].transform.GetChild(0).gameObject != null) {
-            inventory[0] = weaponSlot[0].transform.GetChild(0).transform.GetComponent<ItemID>().itemID;
-        } else if (weaponSlot[1].transform.GetChild(0).gameObject != null) {
-            inventory[1] = weaponSlot[1].transform.GetChild(0).transform.GetComponent<ItemID>().itemID;
-        }
+        inventory[0] = weaponSlot[0].transform.GetChild(0).transform.GetComponent<ItemID>().itemID;
+        inventory[1] = weaponSlot[1].transform.GetChild(0).transform.GetComponent<ItemID>().itemID;
+
         
         
     }
