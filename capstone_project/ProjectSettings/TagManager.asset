@@ -10,6 +10,8 @@ TagManager:
   - GunSlot1
   - GunSlot2
   - gc
+  - Weapon
+  - WeaponBolt
   layers:
   - Default
   - TransparentFX
