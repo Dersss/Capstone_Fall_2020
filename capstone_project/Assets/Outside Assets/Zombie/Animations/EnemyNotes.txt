@@ -1,2 +1,0 @@
-AlertState, AttackingState, and Calm State are the animations I've made.
- All the rest came with the emey package
