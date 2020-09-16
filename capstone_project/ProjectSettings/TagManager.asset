@@ -12,7 +12,12 @@ TagManager:
   - gc
   - Weapon
   - WeaponBolt
+<<<<<<< HEAD
   - WeaponHolder
+=======
+  - Weapon1
+  - Weapon2
+>>>>>>> ders2
   layers:
   - Default
   - TransparentFX
