@@ -12,6 +12,8 @@ TagManager:
   - gc
   - Weapon
   - WeaponBolt
+  - Weapon1
+  - Weapon2
   layers:
   - Default
   - TransparentFX
