@@ -61,39 +61,27 @@
      <Compile Include="Assets\Scripts\Main Menu\LevelSelectButton.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
+     <Compile Include="Assets\WeaponSwitch.cs" />
      <Compile Include="Assets\Scripts\Main Menu\MainMenuStateManager.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CubeMovementController.cs" />
-     <Compile Include="Assets\WeaponSwitch.cs" />
      <None Include="Assets\README.txt" />
      <None Include="Assets\Outside Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
      <None Include="Assets\Outside Assets\Hovl Studio\Procedural fire\Demo scene\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.CacheServer">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
@@ -104,26 +92,38 @@
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.CacheServer">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ScriptableBuildPipeline.Editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ResourceManager">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Addressables.Editor">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Rider.Editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Runtime">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualStudio.Editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Addressables">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
@@ -131,11 +131,11 @@
  <Reference Include="Unity.ScriptableBuildPipeline">
  <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
  </Reference>
- <Reference Include="Cinemachine">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/derss/Desktop/School/AU20/Capstone/Capstone_Fall_2020/capstone_project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
