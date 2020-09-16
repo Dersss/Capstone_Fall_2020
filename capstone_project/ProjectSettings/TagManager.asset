@@ -10,9 +10,12 @@ TagManager:
   - GunSlot1
   - GunSlot2
   - gc
+<<<<<<< HEAD
   - Weapon
   - WeaponBolt
   - WeaponHolder
+=======
+>>>>>>> parent of e24d2e6c... work in progress weapon pickup
   layers:
   - Default
   - TransparentFX
