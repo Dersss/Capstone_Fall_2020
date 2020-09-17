@@ -18,11 +18,20 @@ public class PlayerController : MonoBehaviour {
     GameObject pUp;
     float crouchHeight;
     float standHeight;
-    private PickupController pc;
+    PickupController pc;
+    ItemDatabase database;
+    GameObject gameController;
+    PlayerInventory inventory;
+    int currentWepNum;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         pc = GetComponent<PickupController>();
+
+        gameController = GameObject.FindWithTag("gc");
+        database = gameController.GetComponent<ItemDatabase>();
+        inventory = gameController.GetComponent<PlayerInventory>();
+
         count = 0;
         SetCountText();
         winText.text = "";
@@ -30,6 +39,7 @@ public class PlayerController : MonoBehaviour {
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         standHeight = rb.position.y;
         crouchHeight = standHeight/2;
+        SetCurrentWeapon();
     }
 
     void Update() {
@@ -85,10 +95,13 @@ public class PlayerController : MonoBehaviour {
         //     count += 1;
         //     SetCountText();
         // }
-
-        if (other.gameObject.CompareTag("Pickup")) {
-            Debug.Log("Weapon/Player Collision");
-            // pc.PickupWeapon(other.gameObject);
+        
+        if (other.gameObject.CompareTag("Weapon")) {
+            Debug.Log("Weapon/Player Collision with Weapon: " + other.gameObject.GetComponent<ItemID>().itemID);
+            GameObject newWep = Instantiate(database.weapons[other.gameObject.GetComponent<ItemID>().itemID].weaponObj, inventory.weaponSlot[0].gameObject.transform.position,  inventory.weaponSlot[0].transform.GetChild(0).gameObject.transform.rotation);
+            Destroy(inventory.weaponSlot[currentWepNum].transform.GetChild(0).gameObject);
+            newWep.transform.parent = inventory.weaponSlot[currentWepNum].transform;
+            other.gameObject.SetActive(false);
         }
     }
 
@@ -114,5 +127,14 @@ public class PlayerController : MonoBehaviour {
             rb.position = newPos;
         }
         
+    }
+
+    void SetCurrentWeapon() {
+        GameObject slot1 = GameObject.FindWithTag("Weapon1");
+        if (slot1.active) {
+            currentWepNum = 0;
+        } else {
+            currentWepNum = 1;
+        }
     }
 }

@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour
         if (!isActive) {
             return;
         } 
-
+        
         timer += Time.deltaTime;
 
         if (Input.GetMouseButton(0)) {
