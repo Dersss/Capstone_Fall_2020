@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -4732020995491127709}
   - component: {fileID: 8343990799478688826}
   - component: {fileID: 2324832599786715724}
+  - component: {fileID: 6719696514589639459}
   m_Layer: 0
   m_Name: Uzi
   m_TagString: Weapon
@@ -234,6 +235,19 @@ MonoBehaviour:
   totalAmmo: 900
   customCrossHair: {fileID: 0}
   cam: {fileID: 0}
+--- !u!65 &6719696514589639459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4646874557723094096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.036269262, y: 0.14970443, z: 0.37248352}
+  m_Center: {x: 0, y: -0.0033774823, z: -0.032502145}
 --- !u!1 &4646874557723094098
 GameObject:
   m_ObjectHideFlags: 0

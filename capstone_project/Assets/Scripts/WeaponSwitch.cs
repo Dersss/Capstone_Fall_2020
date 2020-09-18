@@ -32,12 +32,12 @@ public class WeaponSwitch : MonoBehaviour
 
     void SwapWeapon(int weaponType) {
         if (weaponType == 1) {
-            primary.SetActive(true);
-            secondary.SetActive(false);
+            primary.transform.GetChild(0).gameObject.SetActive(true);
+            secondary.transform.GetChild(0).gameObject.SetActive(false);
         }
         if (weaponType == 2) {
-            primary.SetActive(false);
-            secondary.SetActive(true);
+            primary.transform.GetChild(0).gameObject.SetActive(false);
+            secondary.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }

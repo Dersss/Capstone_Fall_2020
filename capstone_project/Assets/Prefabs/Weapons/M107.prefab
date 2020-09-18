@@ -258,6 +258,7 @@ GameObject:
   - component: {fileID: 692476639377130358}
   - component: {fileID: -5012288032917294428}
   - component: {fileID: -2712843161124817825}
+  - component: {fileID: 4406983565425784509}
   m_Layer: 0
   m_Name: M107
   m_TagString: Weapon
@@ -477,6 +478,19 @@ MonoBehaviour:
   totalAmmo: 36
   customCrossHair: {fileID: 0}
   cam: {fileID: 0}
+--- !u!65 &4406983565425784509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366875455433152366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.044446826, y: 0.2076416, z: 1.2352383}
+  m_Center: {x: 0, y: -0.038074195, z: -0.08104658}
 --- !u!1001 &7383541264242524470
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     float standHeight;
     PickupController pc;
     ItemDatabase database;
-    GameObject gameController;
+    GameObject gameController, slot1, slot2, pickup;
     PlayerInventory inventory;
     int currentWepNum;
     void Start()
@@ -39,10 +39,14 @@ public class PlayerController : MonoBehaviour {
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         standHeight = rb.position.y;
         crouchHeight = standHeight/2;
+
+        slot1 = GameObject.FindWithTag("GunSlot1");
+        slot2 = GameObject.FindWithTag("GunSlot2");
         SetCurrentWeapon();
     }
 
     void Update() {
+        
         float moveHor = Input.GetAxis("Horizontal");
         float moveVer = Input.GetAxis("Vertical");
         moveDirection = (moveHor * transform.right + moveVer * transform.forward).normalized;
@@ -57,11 +61,14 @@ public class PlayerController : MonoBehaviour {
             isGrounded = false;
         } else if (Input.GetKeyDown(KeyCode.C)) {
             isCrouching = !isCrouching;
+        } else if (Input.GetKeyDown(KeyCode.G)) {
+            Pickup();
         }
         
     }
     void FixedUpdate()
     {
+        SetCurrentWeapon();
         Move();
         // if (DetectCollision()) {
         //     pUp.SetActive(false);
@@ -98,11 +105,14 @@ public class PlayerController : MonoBehaviour {
         
         if (other.gameObject.CompareTag("Weapon")) {
             Debug.Log("Weapon/Player Collision with Weapon: " + other.gameObject.GetComponent<ItemID>().itemID);
-            GameObject newWep = Instantiate(database.weapons[other.gameObject.GetComponent<ItemID>().itemID].weaponObj, inventory.weaponSlot[0].gameObject.transform.position,  inventory.weaponSlot[0].transform.GetChild(0).gameObject.transform.rotation);
-            Destroy(inventory.weaponSlot[currentWepNum].transform.GetChild(0).gameObject);
-            newWep.transform.parent = inventory.weaponSlot[currentWepNum].transform;
-            other.gameObject.SetActive(false);
+            Debug.Log("Current Weapon: " + currentWepNum);
+            pickup = other.gameObject;
+            
         }
+    }
+
+    void OnTriggerExit(Collider other) {
+        pickup = null;
     }
 
     void OnCollisionStay() {
@@ -130,11 +140,19 @@ public class PlayerController : MonoBehaviour {
     }
 
     void SetCurrentWeapon() {
-        GameObject slot1 = GameObject.FindWithTag("Weapon1");
-        if (slot1.active) {
+        
+        if (slot1.transform.GetChild(0).gameObject.activeSelf) {
             currentWepNum = 0;
         } else {
             currentWepNum = 1;
         }
+    }
+
+    void Pickup() {
+        GameObject newWep = Instantiate(database.weapons[pickup.gameObject.GetComponent<ItemID>().itemID].weaponObj, inventory.weaponSlot[currentWepNum].gameObject.transform.position,  inventory.weaponSlot[currentWepNum].transform.GetChild(0).gameObject.transform.rotation);
+        Destroy(inventory.weaponSlot[currentWepNum].transform.GetChild(0).gameObject);
+        GameObject old = Instantiate(inventory.weaponSlot[currentWepNum].transform.GetChild(0).gameObject, slot1.transform.position, slot1.transform.rotation);
+        newWep.transform.parent = inventory.weaponSlot[currentWepNum].transform;
+        pickup.gameObject.SetActive(false);
     }
 }

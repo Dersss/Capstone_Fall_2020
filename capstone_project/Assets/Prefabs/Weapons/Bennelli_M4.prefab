@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8262598103953966975}
   - component: {fileID: 7336686437273904682}
   - component: {fileID: 7143970839214866398}
+  - component: {fileID: -149962545763296329}
   m_Layer: 0
   m_Name: Bennelli_M4
   m_TagString: Weapon
@@ -313,6 +314,19 @@ MonoBehaviour:
   totalAmmo: 900
   customCrossHair: {fileID: 0}
   cam: {fileID: 0}
+--- !u!65 &-149962545763296329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8388105204975418330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03434936, y: 0.19232099, z: 0.97656214}
+  m_Center: {x: 0, y: -0.06046728, z: 0.009858891}
 --- !u!1 &8388105204975418334
 GameObject:
   m_ObjectHideFlags: 0
