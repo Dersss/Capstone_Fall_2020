@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Nothing useful is happening here yet
+
 public class ZAttack : MonoBehaviour
 {
-    public Animator animator;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +17,28 @@ public class ZAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //heads toward player
-        Vector3 player = new Vector3(GameObject.Find("PlayerCollider").transform.position.x, 0, GameObject.Find("PlayerCollider").transform.position.z);
-        transform.LookAt(player);
+        
+
+        if (!animator.GetBool("Idle"))
+        {
+            //heads toward player
+            Vector3 player = new Vector3(GameObject.Find("PlayerCollider").transform.position.x, 0, GameObject.Find("PlayerCollider").transform.position.z);
+            transform.LookAt(player);
 
 
-
-
+            if (Input.GetKey(KeyCode.I))
+            {
+                animator.SetBool("Idle", true);
+            }
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.Z))
+            {
+                animator.SetBool("Idle", false);
+            }
+        }
+        
 
     }
     private void OnTriggerEnter(Collider other)
