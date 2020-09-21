@@ -1081,7 +1081,6 @@ LightingSettings:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_Name: Settings.lighting
   serializedVersion: 2
   m_GIWorkflowMode: 1
@@ -1139,7 +1138,6 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1 &588298162
 GameObject:
-=======
   m_GameObject: {fileID: 391677985}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1148,12 +1146,10 @@ GameObject:
   m_EditorClassIdentifier: 
 --- !u!65 &391677989
 BoxCollider:
->>>>>>> origin/linda
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588298163}
@@ -1183,7 +1179,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &597417951
 GameObject:
-=======
   m_GameObject: {fileID: 391677985}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1199,12 +1194,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &400075771
 MonoBehaviour:
->>>>>>> origin/linda
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 597417953}
@@ -1218,7 +1211,6 @@ MonoBehaviour:
   m_IsActive: 1
 --- !u!108 &597417952
 Light:
-=======
   m_GameObject: {fileID: 400075770}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1234,7 +1226,6 @@ Animator:
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &423359912
 Mesh:
->>>>>>> origin/linda
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1545,8 +1536,6 @@ MonoBehaviour:
     m_ManualUV: 0
     elementGroup: 0
     m_TextureGroup: -1
-<<<<<<< HEAD
-=======
   m_SharedVertices:
   - m_Vertices: 000000000d00000016000000
   - m_Vertices: 010000000400000017000000
@@ -4649,7 +4638,6 @@ MonoBehaviour:
     m_ManualUV: 0
     elementGroup: 0
     m_TextureGroup: -1
->>>>>>> origin/linda
   - m_Indexes: 18000000190000001a000000190000001b0000001a000000
     m_SmoothingGroup: 0
     m_Uv:
@@ -4662,11 +4650,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4683,11 +4668,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4704,11 +4686,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4725,11 +4704,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4746,11 +4722,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4767,11 +4740,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4788,11 +4758,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4809,11 +4776,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4830,11 +4794,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4851,11 +4812,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4872,11 +4830,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4893,11 +4848,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4914,11 +4866,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4935,11 +4884,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4956,11 +4902,8 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
@@ -4977,18 +4920,13 @@ MonoBehaviour:
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
-<<<<<<< HEAD
     m_Material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-=======
     m_Material: {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
->>>>>>> origin/linda
     m_SubmeshIndex: 0
     m_ManualUV: 0
     elementGroup: 0
     m_TextureGroup: 1
   - m_Indexes: 560000005500000054000000
-<<<<<<< HEAD
-=======
     m_SmoothingGroup: 0
     m_Uv:
       m_UseWorldSpace: 0
@@ -6045,7 +5983,6 @@ MonoBehaviour:
   m_MeshFormatVersion: 1
   m_Faces:
   - m_Indexes: 000000000100000002000000010000000300000002000000
->>>>>>> origin/linda
     m_SmoothingGroup: 0
     m_Uv:
       m_UseWorldSpace: 0
@@ -7127,13 +7064,10 @@ GameObject:
   m_Component:
   - component: {fileID: 975366886}
   m_Layer: 0
-<<<<<<< HEAD
   m_Name: Pickups
   m_TagString: Untagged
-=======
   m_Name: PlayerCollider
   m_TagString: Player
->>>>>>> origin/linda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
