@@ -4,16 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pickup
-  - Fire
-  - ShowOnPause
-  - GunSlot1
-  - GunSlot2
-  - gc
   - Weapon
-  - WeaponBolt
-  - Weapon1
-  - Weapon2
+  - Target
+  - Metal
+  - ExplosiveBarrel
   layers:
   - Default
   - TransparentFX
@@ -23,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - Pickup
+  - 
   - 
   - 
   - 

@@ -6,21 +6,46 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public Animator animator;
-    public Animation anim;
-    public ArrayList an;
+    
     // Start is called before the first frame update
     void Start()
     {
         animator = this.GetComponent<Animator>();
-        anim = this.GetComponent<Animation>();
+        animator.SetBool("atPlayer", false);
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        Vector3 player = new Vector3(GameObject.Find("PlayerCollider").transform.position.x, 0, GameObject.Find("PlayerCollider").transform.position.z);
+        transform.LookAt(player);
+
+
+
+     
         
-       //animator.GetCurrentAnimatorClipInfo(0);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        /*if (other.gameObject.CompareTag("Bullet"))
+        {
+            //fall back animation and despawn
+
+            
+        }*/
         
+        if (other.gameObject.CompareTag("Player"))
+        {
+            animator.SetBool("atPlayer", true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            animator.SetBool("atPlayer", false);
+        }
     }
 }
