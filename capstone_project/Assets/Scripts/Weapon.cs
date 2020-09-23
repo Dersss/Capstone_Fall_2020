@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Weapon_Pickup))]
-[RequireComponent(typeof(AudioSource))]
 public class Weapon : MonoBehaviour
 {
     public int itemID;
@@ -22,14 +20,19 @@ public class Weapon : MonoBehaviour
     private AudioSource audio;
     private bool isActive;
     private float timer = 0f;
+    bool ads = false;
+    GameObject gunSlot;
 
     void Start() {
         ui = FindObjectOfType<Weapon_UI>();
         audio = GetComponent<AudioSource>();
-        audio.playOnAwake = false;
+        // audio.playOnAwake = false;   
+        isActive = true;
+        SetGunSlot();
     }
 
     void Update() {
+        SetGunSlot();
         if (!isActive) {
             return;
         } 
@@ -38,13 +41,48 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetMouseButton(0)) {
             if (ammo >= 1) {
+                audio.Play();
                 Shoot();
+                
                 Debug.Log("Shooting...");
                 timer = 0f;
             }
         }
         if (Input.GetKeyDown(KeyCode.R)) {
             Reload();
+        }
+        if (Input.GetMouseButton(1)) {
+            ads = true;
+            ADS();
+            // if (Input.GetMouseButton(0)) {
+            //     if (ammo >= 1) {
+            //         Shoot();
+                    
+            //         Debug.Log("Shooting...");
+            //         timer = 0f;
+            //     }
+            // }
+        } else {
+            ads = false;
+            gunSlot.transform.localPosition = new Vector3(0.17f, -0.17f, 0.6f);
+        }
+
+        // if (Input.GetMouseButton(0) && Input.GetMouseButton(1)) {
+        //     if (ammo >= 1) {
+        //         Shoot();
+        //         audio.Play();
+        //         Debug.Log("Shooting...");
+        //         timer = 0f;
+        //     }
+        // }
+        
+    }
+
+    void SetGunSlot() {
+        if(GameObject.FindWithTag("GunSlot1").activeSelf) {
+            gunSlot = GameObject.FindWithTag("GunSlot1");
+        } else if (GameObject.FindWithTag("GunSlot2").activeSelf) {
+            gunSlot = GameObject.FindWithTag("GunSlot2");
         }
     }
 
@@ -76,9 +114,9 @@ public class Weapon : MonoBehaviour
     }
 
     public virtual void Shoot() {
-        audio.Play();
+        
         ammo -= 1;
-        Handle_UI();
+        // Handle_UI();
     }
 
     public RaycastHit GetHitData() {
@@ -90,5 +128,10 @@ public class Weapon : MonoBehaviour
         }
 
         return hit;
+    }
+
+    public void ADS() {
+        Debug.Log("ADS");
+        gunSlot.transform.localPosition = Vector3.Slerp(new Vector3(0, 0, 0), new Vector3(-0.17f, -22.013f, 15.416f), 1f * Time.deltaTime); 
     }
 }

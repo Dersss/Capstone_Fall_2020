@@ -8,6 +8,14 @@ TagManager:
   - Target
   - Metal
   - ExplosiveBarrel
+  - GunSlot1
+  - gc
+  - Pickup
+  - GunSlot2
+  - ShowOnPause
+  - Enemy
+  - WeaponHolder
+  - GunShot
   layers:
   - Default
   - TransparentFX

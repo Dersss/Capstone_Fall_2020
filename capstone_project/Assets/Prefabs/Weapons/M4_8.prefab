@@ -93,10 +93,10 @@ GameObject:
   - component: {fileID: 2929698116342017602}
   - component: {fileID: 2929698116341017730}
   - component: {fileID: 973455494963509348}
-  - component: {fileID: 4749682366459322481}
   - component: {fileID: -1120016525490014140}
   - component: {fileID: 7132339619734000710}
   - component: {fileID: 4459541820986765495}
+  - component: {fileID: 5164349851016604971}
   m_Layer: 0
   m_Name: M4_8
   m_TagString: Weapon
@@ -186,7 +186,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac560c2376ee080439bf59e5994cfc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &4749682366459322481
+--- !u!114 &-1120016525490014140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929698116338823746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be7dc9c150565a43bdf57499a7c664b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemID: 1
+  weaponType: 1
+  name: M4
+  weaponObj: {fileID: 2929698116338823746}
+  damage: 0
+  fireRate: 0
+  range: 0
+  ammo: 30
+  maxAmmo: 30
+  totalAmmo: 900
+  customCrossHair: {fileID: 0}
+  cam: {fileID: 0}
+--- !u!65 &7132339619734000710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929698116338823746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0597421, y: 0.17664653, z: 0.7236116}
+  m_Center: {x: -0.004013397, y: 0.008912884, z: 0.023460403}
+--- !u!114 &4459541820986765495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929698116338823746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da69d4a41375faa48a410ac9bffbf75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemID: 1
+--- !u!82 &5164349851016604971
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,15 +246,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 1b766da7cc2d648aa84e36cb5fe8abcb, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 1
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -272,7 +322,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.41
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -282,56 +332,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-1120016525490014140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2929698116338823746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be7dc9c150565a43bdf57499a7c664b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemID: 1
-  weaponType: 1
-  name: M4
-  weaponObj: {fileID: 2929698116338823746}
-  damage: 0
-  fireRate: 0
-  range: 0
-  ammo: 30
-  maxAmmo: 30
-  totalAmmo: 900
-  customCrossHair: {fileID: 0}
-  cam: {fileID: 0}
---- !u!65 &7132339619734000710
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2929698116338823746}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0597421, y: 0.17664653, z: 0.7236116}
-  m_Center: {x: -0.004013397, y: 0.008912884, z: 0.023460403}
---- !u!114 &4459541820986765495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2929698116338823746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da69d4a41375faa48a410ac9bffbf75d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemID: 1
 --- !u!1 &2929698116338823748
 GameObject:
   m_ObjectHideFlags: 0
